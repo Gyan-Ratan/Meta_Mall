@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/G-Room1.unity
     guid: 88f06ae25662d464ea5176157bbcedfb
+  - enabled: 1
+    path: Assets/Scenes/ForestCF.unity
+    guid: 400342382c0b5db408deb2755e2c187d
   m_configObjects: {}
