@@ -14,10 +14,10 @@ public class SceneLoader : MonoBehaviour
       SceneManager.LoadScene(0);
    }
    public void CarShowRoom(){
-      SceneManager.LoadScene(2);
+      SceneManager.LoadScene(1);
    }
-   public void SolarSystem(){
-      SceneManager.LoadScene(3);
+   public void Resturant(){
+      SceneManager.LoadScene(2);
    }
    public void VideoPlayer(){
       SceneManager.LoadScene(4);
