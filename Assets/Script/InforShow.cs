@@ -31,5 +31,16 @@ public class InforShow : MonoBehaviour
             Show = false;
         }
     }
+    public void close()
+    {
+        InfoObject.SetActive(false);
+        Show = false;
+    }
+    public void show()
+    {
+        InfoObject.SetActive(true);
+        Show = true;
+    }
+  
 
 }
