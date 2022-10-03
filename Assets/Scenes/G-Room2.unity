@@ -3202,6 +3202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11412670, guid: 1a76105282726bb45aad77f7767f4cb6, type: 3}
+      propertyPath: m_loadingTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 22334634, guid: 1a76105282726bb45aad77f7767f4cb6, type: 3}
       propertyPath: m_Camera
       value: 
@@ -13370,7 +13374,7 @@ PrefabInstance:
     - target: {fileID: 7747342414308638512, guid: 936980dfe6d55e5469b3924ec372aaa0,
         type: 3}
       propertyPath: speed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 936980dfe6d55e5469b3924ec372aaa0, type: 3}

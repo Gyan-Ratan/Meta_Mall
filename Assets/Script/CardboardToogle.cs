@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VR;
-public class CardBoardToggle : MonoBehaviour
+using UnityEngine.XR;
+public class CardboardToogle : MonoBehaviour
 {
-    int vrModeInt;
+    private bool Show = false;
     public void ToggleVRMode()
     {
-        if (PlayerPrefs.GetInt("Vr Mode") == 1)
+        if (!Show)
         {
-            vrModeInt = 0;
+            XRSettings.enabled = true;
+            Show = true;
+
         }
-        if (PlayerPrefs.GetInt("Vr Mode") == 0)
+       else
         {
-            vrModeInt = 1;
+            XRSettings.enabled = false;
+            Show = false;
         }
-        PlayerPrefs.SetInt("Vr Mode", vrModeInt);
+      
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (PlayerPrefs.GetInt("Vr Mode") == 1)
-        {
-            CardBoard.SDK.VRModeEnabled = true;
-        }
-        if (PlayerPrefs.GetInt("Vr Mode") == 0)
-        {
-            CardBoard.SDK.VRModeEnabled = false;
-        }
-    }
+    
 }
