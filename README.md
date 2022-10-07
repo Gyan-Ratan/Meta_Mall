@@ -22,6 +22,5 @@ UnityPackage  drive link :
 
 
 # Prototype link:
-- [Pc EMU]()
-- [Android Build]()
+- [Android Build](https://www.youtube.com/embed/tRPDQWdFoO0)
 
