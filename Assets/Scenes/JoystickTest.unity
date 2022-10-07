@@ -1127,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 4803413807292498942, guid: e74d56e53df402b4c9dfb7d195a82541,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Joystick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e74d56e53df402b4c9dfb7d195a82541, type: 3}

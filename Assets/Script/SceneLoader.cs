@@ -13,17 +13,16 @@ public class SceneLoader : MonoBehaviour
    public void LoadStartScene(){
       SceneManager.LoadScene(0);
    }
-   public void CarShowRoom(){
-      SceneManager.LoadScene(1);
-   }
-   public void Resturant(){
-      SceneManager.LoadScene(2);
-   }
-   public void VideoPlayer(){
-      SceneManager.LoadScene(4);
-   }
-    public void Museum()
+   public void MainMenu()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(sceneName: "Main Menu");
+    }
+    public void OprnWVR()
+    {
+        SceneManager.LoadScene(sceneName: "Open VR");
+    }
+    public void OprnWNVR()
+    {
+        SceneManager.LoadScene(sceneName: "Open NVR");
     }
 }
