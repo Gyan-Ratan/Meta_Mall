@@ -5,23 +5,25 @@ using UnityEngine.VR;
 using UnityEngine.XR;
 public class CardboardToogle : MonoBehaviour
 {
+    int vrModeInt;
     private bool Show = false;
     public void ToggleVRMode()
     {
-        if (!Show)
+        if (Show==false)
         {
             XRSettings.enabled = true;
             Show = true;
-
         }
-       else
+        if (Show==true)
         {
             XRSettings.enabled = false;
             Show = false;
         }
-      
     }
-
+    void Update()
+    {
+        
+    }
     // Update is called once per frame
-    
+
 }

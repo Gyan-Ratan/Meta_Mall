@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Open Worl Menu.unity
+  - enabled: 0
+    path: Assets/Scenes/Open VR.unity
     guid: 968ffc37527436b488849085983f1b93
-  - enabled: 1
-    path: Assets/Scenes/G-Room2.unity
+  - enabled: 0
+    path: Assets/Scenes/Car SRNVR.unity
     guid: c20d612d8e5a6ef4ba1944e120cbc277
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Resturant.unity
     guid: 731f7cf8d02243645bd17c23f202bb58
   m_configObjects: {}
