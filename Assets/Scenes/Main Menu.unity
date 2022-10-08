@@ -1189,7 +1189,6 @@ GameObject:
   - component: {fileID: 852733084}
   - component: {fileID: 852733083}
   - component: {fileID: 852733086}
-  - component: {fileID: 852733087}
   m_Layer: 5
   m_Name: VR
   m_TagString: Untagged
@@ -1343,61 +1342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InfoObject: {fileID: 852733081}
---- !u!114 &852733087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852733081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeda43afbfd5f14aabdc3268652ed3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1015439210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1015439212}
-  - component: {fileID: 1015439211}
-  m_Layer: 0
-  m_Name: Toggle Key
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1015439211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015439210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeda43afbfd5f14aabdc3268652ed3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1015439212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015439210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 413.61578, y: 269.6689, z: -28.066578}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047579926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1354,7 @@ GameObject:
   - component: {fileID: 1047579930}
   - component: {fileID: 1047579929}
   - component: {fileID: 1047579928}
+  - component: {fileID: 1047579931}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1480,20 +1425,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558214508}
-        m_MethodName: OprnWVR
+      - m_Target: {fileID: 1047579931}
+        m_MethodName: Awake
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1015439211}
-        m_MethodName: VerifyDeviceName
-        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1539,6 +1473,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047579926}
   m_CullTransparentMesh: 0
+--- !u!114 &1047579931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047579926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95b52549e141d849af9c0a99c49ecc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355453331
 GameObject:
   m_ObjectHideFlags: 0

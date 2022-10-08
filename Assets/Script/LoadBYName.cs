@@ -4,32 +4,34 @@ using UnityEngine;
 using UnityEngine.XR;
 public class LoadBYName : MonoBehaviour
 {
-
-    public void VerifyDeviceName(string newDeviceName)
+    public void Awake()
     {
-        if (newDeviceName == "none")
-        {
-            Debug.Log("Will load none device");
-            StartCoroutine(LoadDevice(newDeviceName));
-
-        }
-        if (newDeviceName == "cardboard")
-        {
-            Debug.Log("Will load cardboard device");
-            StartCoroutine(LoadDevice(newDeviceName));
-        }
-        else
-        {
-            Debug.Log("Can't find device with name " + newDeviceName);
-        }
-
+        SwitchToVR();
     }
 
-    IEnumerator LoadDevice(string newDeviceName)
+
+    // Call via `StartCoroutine(SwitchToVR())` from your code. Or, use
+    // `yield SwitchToVR()` if calling from inside another coroutine.
+    IEnumerator SwitchToVR()
     {
-        XRSettings.LoadDeviceByName(newDeviceName);
-        yield return new WaitForSeconds(10);
+        // Device names are lowercase, as returned by `XRSettings.supportedDevices`.
+        string desiredDevice = "cardboard"; // Or "cardboard".
+
+        // Some VR Devices do not support reloading when already active, see
+        // https://docs.unity3d.com/ScriptReference/XR.XRSettings.LoadDeviceByName.html
+        if (String.Compare(XRSettings.loadedDeviceName, desiredDevice, true) != 0)
+        {
+            XRSettings.LoadDeviceByName(desiredDevice);
+
+            // Must wait one frame after calling `XRSettings.LoadDeviceByName()`.
+            yield return null;
+        }
+
+        // Now it's ok to enable VR mode.
         XRSettings.enabled = true;
-        Debug.Log("Loaded " + newDeviceName);
+    }
+    private void Update()
+    {
+     
     }
 }
