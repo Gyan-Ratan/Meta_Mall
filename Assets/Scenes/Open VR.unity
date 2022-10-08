@@ -4161,7 +4161,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: Resturant
+        m_MethodName: RestaurantVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13737,9 +13737,9 @@ Transform:
   - {fileID: 603571953}
   - {fileID: 1313362238}
   - {fileID: 1672303554}
+  - {fileID: 2023779887}
   - {fileID: 1613711948}
   - {fileID: 1077231502}
-  - {fileID: 2023779887}
   m_Father: {fileID: 978228946}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23917,7 +23917,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: CarShowRoom
+        m_MethodName: CarShowVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41468,7 +41468,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: CarShowRoom
+        m_MethodName: CarShowVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47232,7 +47232,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resturant
+  m_Text: Restaurant
 --- !u!222 &1415497909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57306,7 +57306,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: Resturant
+        m_MethodName: RestaurantVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
