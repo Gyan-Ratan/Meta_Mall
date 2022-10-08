@@ -4137,7 +4137,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: Resturant
+        m_MethodName: RestaurantNVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25329,7 +25329,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: CarShowRoom
+        m_MethodName: CarShowNVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41953,7 +41953,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: CarShowRoom
+        m_MethodName: CarShowNVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47893,7 +47893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resturant
+  m_Text: Restaurant
 --- !u!222 &1415497909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58245,7 +58245,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1146390593}
-        m_MethodName: Resturant
+        m_MethodName: RestaurantNVR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
