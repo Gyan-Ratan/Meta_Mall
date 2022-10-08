@@ -4,23 +4,32 @@ using UnityEngine;
 using UnityEngine.XR;
 public class LoadBYName : MonoBehaviour
 {
-    
-   public void Sw()
+
+    public void VerifyDeviceName(string newDeviceName)
     {
-        SwitchToVR();
+        if (newDeviceName == "none")
+        {
+            Debug.Log("Will load none device");
+            StartCoroutine(LoadDevice(newDeviceName));
+
+        }
+        if (newDeviceName == "cardboard")
+        {
+            Debug.Log("Will load cardboard device");
+            StartCoroutine(LoadDevice(newDeviceName));
+        }
+        else
+        {
+            Debug.Log("Can't find device with name " + newDeviceName);
+        }
+
     }
 
-    IEnumerator SwitchToVR()
+    IEnumerator LoadDevice(string newDeviceName)
     {
-        if (XRSettings.loadedDeviceName != "cardboard")
-        {
-            XRSettings.LoadDeviceByName("cardboard"); // Or "daydream" (both lowercase).
-
-            // Wait one frame!
-            yield return null;
-
-            // Now it's ok to enable VR mode.
-            XRSettings.enabled = true;
-        }
+        XRSettings.LoadDeviceByName(newDeviceName);
+        yield return new WaitForSeconds(10);
+        XRSettings.enabled = true;
+        Debug.Log("Loaded " + newDeviceName);
     }
 }
