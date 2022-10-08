@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Car SRVR.unity
     guid: ad6344ee10bf8ab4c87dd891af83be0c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Resturant VR.unity
     guid: 6c7a47d54fbe94647800c21b7c5951f2
   - enabled: 1
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Car SRNVR.unity
     guid: 557facfed7675ea4988b35494e181247
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Resturant NVR.unity
     guid: 731f7cf8d02243645bd17c23f202bb58
   m_configObjects:

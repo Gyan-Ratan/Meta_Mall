@@ -1,21 +1,20 @@
-﻿using System;
+﻿// Run in split-screen mode
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.XR;
-public class LoadBYName : MonoBehaviour
+public class TestToogleVR : MonoBehaviour
 {
     public void Awake()
     {
         SwitchToVR();
     }
-
-
     // Call via `StartCoroutine(SwitchToVR())` from your code. Or, use
     // `yield SwitchToVR()` if calling from inside another coroutine.
     IEnumerator SwitchToVR()
     {
         // Device names are lowercase, as returned by `XRSettings.supportedDevices`.
-        string desiredDevice = "cardboard"; // Or "cardboard".
+        string desiredDevice = "daydream"; // Or "cardboard".
 
         // Some VR Devices do not support reloading when already active, see
         // https://docs.unity3d.com/ScriptReference/XR.XRSettings.LoadDeviceByName.html
@@ -30,8 +29,5 @@ public class LoadBYName : MonoBehaviour
         // Now it's ok to enable VR mode.
         XRSettings.enabled = true;
     }
-    private void Update()
-    {
-     
-    }
+
 }
