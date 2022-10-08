@@ -25,4 +25,20 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "Open NVR");
     }
+    public void CarShowVR()
+    {
+        SceneManager.LoadScene(sceneName: "Car SRVR");
+    }
+    public void CarShowNVR()
+    {
+        SceneManager.LoadScene(sceneName: "Car SRNVR");
+    }
+    public void RestaurantVR()
+    {
+        SceneManager.LoadScene(sceneName: "Resturant VR");
+    }
+    public void RestaurantNVR()
+    {
+        SceneManager.LoadScene(sceneName: "Resturant NVR");
+    }
 }
